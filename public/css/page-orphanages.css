@@ -23,8 +23,47 @@ aside p {
     font: 400 1.6rem/1.5 "Nunito", sans-serif;
 }
 
-aside footer {
+aside footer p {
     margin: 0.8rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+    animation-delay: 200ms;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content {
+    position: absolute;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .8rem 1.2 rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.leaflet-popup-content a{
+    width: 3rem;
+    height: 3rem;
+    background: #000000;
+    box-shadow: 17.2828px 27.65px 41.48px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaflet-popup-tip {
+    display: none;
 }
 
 /* button */
@@ -33,8 +72,8 @@ a.create-orphanage {
     position: absolute;
     right: 4rem;
     bottom: 4rem;
-    width: 6.4rem;
-    height: 6.4rem;
+    width: 5rem;
+    height: 5rem;
     background: #ffd666;
     border: 0;
     border-radius: 2rem;
@@ -42,8 +81,10 @@ a.create-orphanage {
     align-items: center;
     justify-content: center;
     transition: 200ms;
+    z-index: 1000;
 }
 
 a.create-orphanage:hover {
     background-color: #fbe199;
 }
+
