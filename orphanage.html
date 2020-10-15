@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lar das Meninas | Happy</title>
+    <title>Associação Lar Recanto do Carinho | Happy</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -21,65 +21,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   </head>
   <body>
+    <aside class="animate-right sidebar">
+      <img src="./public/images/map-marker.svg" alt="Happy">
+      <footer>
+        <button onclick="history.back()">
+          <img src="./public/images/arrow.svg" alt="Voltar">
+        </button>
+      </footer>
+    </aside>
     <div id="page-orphanage">
-      <aside class="animate-right">
-      
-      </aside>
-     
-     <main>
+     <main class="animate-appear with-sidebar">
        <div class="orphanage-details">
-         <img src="./public/images/home.jpg" alt="lar das meninas">
-
+         <img src="./public/images/main.jpg" alt="lar das meninas">
          <div class="images">
            <button class="active" type="button">
-             <img src="./public/images/home.jpg" alt="lar das meninas">
+             <img src="./public/images/image1.jpg" alt="lar das meninas">
            </button>
            <button type="button">
-            <img src="./public/images/home.jpg" alt="lar das meninas">
+            <img src="./public/images/image2.jpg" alt="lar das meninas">
           </button>
           <button type="button">
-            <img src="./public/images/home.jpg" alt="lar das meninas">
+            <img src="./public/images/image3.jpg" alt="lar das meninas">
           </button>
           <button type="button">
-            <img src="./public/images/home.jpg" alt="lar das meninas">
+            <img src="./public/images/image4.jpg" alt="lar das meninas">
           </button>
           <button type="button">
-            <img src="./public/images/home.jpg" alt="lar das meninas">
+            <img src="./public/images/image5.jpg" alt="lar das meninas">
           </button>
           <button type="button">
-            <img src="./public/images/home.jpg" alt="lar das meninas">
+            <img src="./public/images/image6.jpg" alt="lar das meninas">
           </button>
          </div>
          <div class="orphanage-details-content">
           <h1>
-            Lar das Meninas
+            Associação Lar Recanto do Carinho
           </h1>
           <p>
             Presta assistência a crianças de 06 a 15 anos que se encontram em situação de risco e/ou vulnerabilidade social.
           </p>
           <div class="map-container">
-            <div class="mapid"></div>
+            <div id="mapid"></div>
             <footer>
               <a href="">Ver rotas no Google Maps</a>
             </footer>
           </div>
-          <hr>
           <h2>Instruções para visita</h2>
           <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
           <div class="open-details">
             <div class="hour">
               <img src="./public/images/clock.svg" alt="Horários">
-              Horário de visitas das 18h as 8h
+              <p>Horário de visitas das 18h as 8h</p> 
             </div>
             <div class="open-on-weekends">
               <img src="./public/images/info.svg" alt="Informações">
-              Atendemos aos finais de semana
+              <p>Atendemos aos finais de semana</p> 
             </div>
-            <button type="button" class="primary-button">
-              <img src="./public/images/whatsapp.svg" alt="Chamar no whatsapp">
-              Entrar em contato
-            </button>
           </div>
+          <button onclick="location.href='https://api.whatsapp.com/send?phone=554832280024'" target="_blank" type="button" class="primary-button">
+            <img src="./public/images/whatsapp.svg" alt="Chamar no whatsapp">
+            Whatsapp
+          </button>
          </div>
        </div>
      </main> 

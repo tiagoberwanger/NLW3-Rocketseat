@@ -1,5 +1,14 @@
+const options = {
+    dragging: false,
+    touchZoom: false,
+    doubleClickZoom: false,
+    scrollWheelZoom: false,
+    zoomControl: false,
+
+}
+
 //create map
-const map = L.map('mapid').setView([-27.574825, -48.535111], 15);
+const map = L.map('mapid', options).setView([-27.574825, -48.535111], 15);
 
 //create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -23,4 +32,7 @@ const popup = L.popup({
 //create and add marker
 L.marker([-27.574825, -48.535111], {icon})
 .addTo(map)
-.bindPopup(popup)
+
+// function openWhatsapp() {
+//     window.open(url)
+// }
