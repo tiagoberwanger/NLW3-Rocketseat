@@ -39,15 +39,14 @@ aside footer p {
 }
 
 .leaflet-popup-content {
-    position: absolute;
     color: #000000;
     font-family: 'Nunito', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin: .8rem 1.2 rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: -1;
 }
 
@@ -60,6 +59,7 @@ aside footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
 }
 
 .leaflet-popup-tip {

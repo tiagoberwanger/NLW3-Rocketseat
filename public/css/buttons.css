@@ -1,0 +1,46 @@
+.primary-button {
+    background: #29d191;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    border: 0;
+    border-radius: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.primary-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.button-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.button-select button {
+    height: 6.4rem;
+    background: whitesmoke;
+    border: 1px solid grey;
+    color: #29d191;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.button-select button.active {
+    background:#33fdb0;
+    border: 1px solid grey;
+    color: white;
+}
+
+.button-select button:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.button-select button:last-child {
+    border-radius: 0 20px 20px 0;
+}
