@@ -41,6 +41,8 @@
 
           <div class="map-container">
             <div id="mapid"></div>
+            <input type="hidden" name="lat">
+            <input type="hidden" name="lng">
             <footer>
               <a href="#" id="select-point">
                 <p>Clique no mapa para adicionar a localização</p> 
@@ -64,10 +66,14 @@
             <div class="images-upload" id="images">
               <div class="new-upload">
                 <input name="images" placeholder="Cole o link da foto aqui" required>
-                <span><img src="./public/images/remove-file.svg" alt="Remove"></span>
+                <span onclick="deleteField(event)">
+                  <img 
+                    src="./public/images/remove-file.svg" 
+                    alt="Remove">
+                </span>
               </div>
             </div>
-              <button class="add-button">
+              <button onclick="addPhotoField()" class="add-button">
                 <img src="./public/images/add-file.svg" alt="Adicionar">
               </button>
           </div>
@@ -86,8 +92,19 @@
             <label for="open_on_weekends">Atende fim de semana?</label>
             <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required>
             <div class="button-select">
-              <button type="button" class="active">Sim</button>
-              <button type="button">Não</button>
+              <button
+                data-value="1"
+                onclick="toggleSelect(event)" 
+                type="button" 
+                class="active">
+                Sim
+              </button>
+              <button 
+                data-value="0"
+                onclick="toggleSelect(event)" 
+                type="button">
+                Não
+              </button>
             </div>
             <button type="submit" class="primary-button">
               Confirmar
