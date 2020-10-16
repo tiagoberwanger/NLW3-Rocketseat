@@ -1,0 +1,26 @@
+{
+  "name": "NLW3-Rocketseat",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r =======\r ## Primeira participação no Next Level Week da Rocketseat. \r ### Objetivo: criar uma aplicação para busca e adição de orfanatos na cidade.\r >>>>>>> 657e3c00bc290f13aeed601ed35827cc9db63179",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.5",
+    "npm": "^6.14.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagoberwanger/NLW3-Rocketseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagoberwanger/NLW3-Rocketseat/issues"
+  },
+  "homepage": "https://github.com/tiagoberwanger/NLW3-Rocketseat#readme"
+}
