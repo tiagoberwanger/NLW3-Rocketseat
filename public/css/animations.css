@@ -1,10 +1,11 @@
-/* animações */
 
+/* animaçoes */
 @keyframes up {
     from {
         opacity: 0;
         transform: translateY(16px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -20,7 +21,7 @@
     }
 }
 
-@keyframes apper {
+@keyframes appear {
     from {
         opacity: 0;
     }
@@ -30,7 +31,7 @@
 }
 
 .animate-up {
-    animation: up;
+    animation-name: up; 
     animation-duration: 300ms;
     animation-fill-mode: backwards;
 }

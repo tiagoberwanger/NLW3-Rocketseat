@@ -2,7 +2,11 @@
 const map = L.map('mapid').setView([-27.574825, -48.535111], 15);
 
 //create and add tileLayer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+})
+.addTo(map)
 
 //create icon
 const icon = L.icon({
@@ -29,6 +33,7 @@ function addMarker({id, name, lat, lng}) {
 }
 
 const orphanagesSpan = document.querySelectorAll('.orphanages span')
+
 orphanagesSpan.forEach(span => {
     const orphanage = {
         id: span.dataset.id,
